@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item name="layout_main_led_panel" type="id"/>
+    <item name="layout_main_led0" type="id"/>
+    <item name="layout_main_led1" type="id"/>
+    <item name="layout_main_led2" type="id"/>
+    <item name="layout_main_led3" type="id"/>
+    <item name="layout_main_led4" type="id"/>
+    <item name="layout_main_button_accept" type="id"/>
+    <item name="layout_main_button_decline" type="id"/>
+    <item name="layout_main_provision_list" type="id"/>
+    <item name="layout_main_divider_1" type="id"/>
+    <item name="layout_main_divider_2" type="id"/>
+
+    <item name="layout_main_agreement_label" type="id"/>
+    <item name="layout_main_provisions_label" type="id"/>
+    
+    <item name="layout_provision_row_provision" type="id"/>
+    <item name="layout_provision_row_action_button" type="id"/>
+
+    <item name="popup_menu_notify_positive" type="id"/>
+    <item name="popup_menu_notify_negative" type="id"/>
+    <item name="popup_menu_get_random" type="id"/>
+    <item name="popup_menu_sign" type="id"/>
+    
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/popup_menu_notify_positive"
+        android:title="notify positive"/>
+
+    <item
+        android:id="@id/popup_menu_notify_negative"
+        android:title="notify negative"/>
+
+    <item
+        android:id="@id/popup_menu_get_random"
+        android:title="get random"/>
+
+    <item
+        android:id="@id/popup_menu_sign"
+        android:title="sign"/>
+
+</menu>

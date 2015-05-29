@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+    >
+    
+    <TextView
+        android:id="@id/layout_main_agreement_label"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="Agreement"
+        android:textColor="@color/secondary_text"
+        android:fontFamily="sans-serif"
+        />
+
+    <LinearLayout
+        android:id="@id/layout_main_led_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_main_agreement_label"
+        >
+
+        <RadioButton
+            android:id="@id/layout_main_led0"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:enabled="false"
+            />
+
+        <RadioButton
+            android:id="@id/layout_main_led1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:enabled="false"
+            />
+
+        <RadioButton
+            android:id="@id/layout_main_led2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:enabled="false"
+            />
+
+        <RadioButton
+            android:id="@id/layout_main_led3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:enabled="false"
+            />
+
+        <RadioButton
+            android:id="@id/layout_main_led4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@id/layout_main_button_accept"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:text="Accept"
+            android:enabled="false"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@id/layout_main_button_decline"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:text="Decline"
+            android:enabled="false"
+            android:textSize="12sp"
+            />
+        
+    </LinearLayout>
+
+
+    <View
+        android:id="@id/layout_main_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/layout_main_led_panel"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@id/layout_main_provisions_label"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layout_main_divider_2"
+        android:text="Provisions"
+        android:textColor="@color/secondary_text"
+        android:fontFamily="sans-serif"
+        />
+    
+    <ListView
+        android:id="@id/layout_main_provision_list"
+        android:layout_below="@id/layout_main_provisions_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+    </ListView>
+    
+
+</RelativeLayout>
