@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/left_drawer_view"
+            android:layout_width="@dimen/left_drawer_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/lighter_navy" >
+
+            <ImageView
+                android:id="@+id/drawer_header_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sidebarlogo" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/addnew_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drawer_header_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_orange_button"
+                android:padding="10dp"
+                android:text="@string/add"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_small" />
+
+            <LinearLayout
+                android:id="@+id/all_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addnew_textview"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_menu"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/sidebarall" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/all_drawer_text_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/all_pwd"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/starred_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all_pwd_layout"
+                android:background="@drawable/bg_menu"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/sidebarstarred" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/starred_drawer_text_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/starred_pwd"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_small" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/starred_pwd_layout"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/gray" >
+            </TextView>
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seperator"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:childDivider="@android:color/transparent"
+                android:divider="@null"
+                android:gravity="center_vertical"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent" />
+
+            <com.bionym.app.passwordvault.component.CustomTextView
+                android:id="@+id/text_banner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/menu_footer1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro" >
+            </com.bionym.app.passwordvault.component.CustomTextView>
+
+            <TextView
+                android:id="@+id/text_banner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/menu_footer2"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro" >
+            </TextView>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>
